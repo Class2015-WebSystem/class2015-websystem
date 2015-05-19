@@ -1,14 +1,48 @@
-# class2015-websystem
 
-## 先做一下Fork and Pull Request 测试
+## 基本配置
 
-先配置好你的git config, name和email填写 **Github 的帐号和邮箱！**
+先配置好你的git config  
+name 和 email 填写 **Github 的帐号和邮箱！**
 
 ```
 $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 ```
-然后clone仓库
+
+## Fork And Send Pull Requst基本流程
+
+点击右上角的 **fork**  
+然后 clone **你 fork 后的仓库**（在你个人主页的repository里面）,下面以我的为例：
+
 ```
-git clone https://github.com/Class2015-WebSystem/class2015-websystem.git
+git clone git@github.com:fjswhl/class2015-websystem.git
+```
+
+进入到仓库的PR-test文件夹, 在里面新建一个文件：学号.txt，然后提交并 push（以后你可以对自己 fork 后的仓库随意 push）
+
+```
+git add -A  
+git commit -m "wip"  
+git push origin master  
+```
+
+然后进入[本项目主页的Pull Request页面](https://github.com/Class2015-WebSystem/class2015-websystem/pulls)，点击`New Pull Request`, 选择你自己的分支 点击 `create pull request`，这样就 OK 了，
+
+## 怎样把fork后的仓库和主仓库保持同步？
+
+新添加一个名为 upstream的 remote 指向公共仓库
+
+```
+git remote add upstream https://github.com/Class2015-WebSystem/class2015-websystem.git
+```
+从公共仓库获取 master 分支
+
+```
+git fetch upstream
+```
+合并分支，如果有冲突的话，可以用`sourcetree`之类的客户端手动解决冲突
+
+```
+git checkout master
+git merge upstream/master
 ```
