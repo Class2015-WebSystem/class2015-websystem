@@ -37,6 +37,7 @@ git push origin master
 git remote add upstream https://github.com/Class2015-WebSystem/class2015-websystem.git
 ```
 >**以下的命令每次同步都要执行**  
+>另外推荐使用[SourceTree](http://www.sourcetreeapp.com/), 会自动和主仓库同步
 
 从公共仓库获取 master 分支
 
