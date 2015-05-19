@@ -31,10 +31,14 @@ git push origin master
 ## 怎样把fork后的仓库和主仓库保持同步？
 
 新添加一个名为 upstream的 remote 指向公共仓库
+>**这行命令只需要运行一次**
 
 ```
 git remote add upstream https://github.com/Class2015-WebSystem/class2015-websystem.git
 ```
+>**以下的命令每次同步都要执行**  
+>另外推荐使用[SourceTree](http://www.sourcetreeapp.com/), 会自动和主仓库同步
+
 从公共仓库获取 master 分支
 
 ```
