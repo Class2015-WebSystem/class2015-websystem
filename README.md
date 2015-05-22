@@ -1,6 +1,6 @@
-## TODO：Task2
-![](./CommonResource/Screenshots/task2.png)
+## Tasks Wiki链接
 
+* Task2: [Web项目建议书](https://github.com/Class2015-WebSystem/class2015-websystem/wiki/Web%E9%A1%B9%E7%9B%AE%E5%BB%BA%E8%AE%AE%E4%B9%A6)
 
 ---
 ## 基本配置
