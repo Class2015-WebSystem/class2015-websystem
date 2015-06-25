@@ -1,11 +1,12 @@
 # Web Engineering
-## Task 4
+## Task 6:UI design
+### 张昕昳 jacqueline
 
 Simple Introduction: Our task is to develop a blog system.
 
 
 Structure:
-1. Main User Presentation Interface
+**1. Main User Presentation Interface**
 * Presentation Interface
 [![](https://lh4.googleusercontent.com/-2u3EgdN_i8E/VYuTwZ4Q5AI/AAAAAAAAAEg/WaGMOjB9lRY/w886-h602-no/Presentation.gif "Presentation Interface")](#)
 
@@ -20,7 +21,8 @@ Structure:
 
 ————————————————————
 
-2. Main User Interface
+
+**2. Main User Interface**
 * About Interface
 ![User's main activity and likes](https://lh3.googleusercontent.com/fVSiOJvBVr2zmrOFBqWBncC_amW1ns_-Uj6EzI7hcg=w865-h692-no "About Interface")
 
@@ -39,4 +41,4 @@ Structure:
 
 * More Interface
 ![This interface record the collection of the user. You can touch the heart-shaped button to mark your collection.](https://lh3.googleusercontent.com/VVPx7VIOABmX1_8hq9m3GekRHRbE2Jn3f2EwSwa2bg=w865-h692-no "More Interface")
-([VVPx7VIOABmX1\_8hq9m3GekRHRbE2Jn3f2EwSwa2bg=w865-h692-no](https://lh3.googleusercontent.com/VVPx7VIOABmX1_8hq9m3GekRHRbE2Jn3f2EwSwa2bg=w865-h692-no "VVPx7VIOABmX1_8hq9m3GekRHRbE2Jn3f2EwSwa2bg=w865-h692-no"))
+
