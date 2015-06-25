@@ -14,7 +14,7 @@ Structure:
 ![Our product 's introduction to the user](https://lh3.googleusercontent.com/Xt7pyiuekFNuK8FwZ5u8Nl4y1OOJmxuMI3DfvlrqgA=w1019-h692-no "menu")
 
 * Login Interface
-![](https://lh3.googleusercontent.com/iDg7q5r9_H2ktTgAwJ4AujZKlbty6ifHELT77Iug1g=w324-h220-no "Login Interface")
+![](https://lh3.googleusercontent.com/iDg7q5r9_H2ktTgAwJ4AujZKlbty6ifHELT77Iug1g=w1019-h692-no "Login Interface")
 
 * Register Interface
 ![](https://lh3.googleusercontent.com/Tul3__QNtqkwWlsSnwJ4QLMo1kyYrM_Ijz3JZ63HHw=w1019-h692-no "Register Interface")
