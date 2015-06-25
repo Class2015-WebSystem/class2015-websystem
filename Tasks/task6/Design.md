@@ -38,7 +38,6 @@
 ![User's mian blogs](https://lh3.googleusercontent.com/aStoQ03tCfRuL_onhr9nrQkFX85cGBFs2zIyxO2OFg=w865-h692-no "Blog Interface")
 
 
-
 * Photos Interface
 ![Photos and vedios information](https://lh3.googleusercontent.com/Tl1zC01v6l616fPiT00aQGssRri-T9F4xmsEnWPSSg=w865-h692-no "Photos Interface")
 
