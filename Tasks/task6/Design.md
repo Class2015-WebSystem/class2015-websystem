@@ -36,7 +36,6 @@
 
 * Blog Interface
 ![User's mian blogs](https://lh3.googleusercontent.com/aStoQ03tCfRuL_onhr9nrQkFX85cGBFs2zIyxO2OFg=w865-h692-no "Blog Interface")
-([VVPx7VIOABmX1\_8hq9m3GekRHRbE2Jn3f2EwSwa2bg=w865-h692-no](https://lh3.googleusercontent.com/VVPx7VIOABmX1_8hq9m3GekRHRbE2Jn3f2EwSwa2bg=w865-h692-no ))
 
 
 
