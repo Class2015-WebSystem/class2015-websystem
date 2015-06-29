@@ -1,0 +1,110 @@
+section.posts {
+    margin-top: 2em;
+}
+
+section.posts  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    color: #4FC1E9;
+}
+
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 150%;
+}
+h3 {
+	font-size: 110%;
+}
+h3 {
+	font-size: 100%;
+}
+h4 {
+	font-size: 99%;
+}
+h5 {
+	font-size: 96%;
+}
+h6 {
+	font-size: 92%;
+}
+
+header>h1 {
+	font-size: 250%;
+}
+header>h2 {
+	font-size: 187.5%;
+}
+header>h3 {
+	font-size: 125%;
+}
+header>h4 {
+	font-size: 123%;
+}
+header>h5 {
+	font-size: 100%;
+}
+header>h6 {
+	font-size: 90%;
+}
+
+
+footer {
+    margin-top: 3em;
+    color: white;
+}
+
+.circ-odd {
+    background-color: #4B77BE !important;
+}
+
+.navbar-brand > img {
+    display: inline!important;
+}
+
+.navbar-logo {
+    display: inline-block;
+    height: 26px;
+}
+
+.events-heading a {
+    color: dimgrey;
+    transition: all .2s ease-in-out;
+}
+
+.events-heading a:hover {
+    color: #4FC1E9;
+}
+
+.timeline dl dd .events .events-body .events-heading {
+    font-size: 16px!important;
+}
+
+.container-withcover {
+    background-position:center top;
+    background-size: cover;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 2px #4B77BE;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.container-abitabove {
+    margin-top: -20px;
+}
+
+.blog-logo {
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #666, 0 0 0 2px rgba(0,0,0,.2);
+}
+
+.no-cover {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAKklEQVQImWPIzMz87+vri4IZfH19/6NLMMAYyBIMyCpgEgzo5mVmZv4HAPmEMRtoR8GQAAAAAElFTkSuQmCC) repeat;
