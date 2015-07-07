@@ -12,12 +12,27 @@
         <link href="{{asset "css/bootflat.min.css"}}" rel="stylesheet">
 		<link href="{{asset "css/octicons.css"}}" rel="stylesheet">
         <link href="{{asset "css/app.css"}}" rel="stylesheet">
+        <!-- 代码高亮相关 -->
+       <link rel="stylesheet" type="text/css" href="{{asset "css/tomorrow-night-eighties.css"}}">
+        <script src={{asset "css/highlight.pack.js"}}></script>
+        <script>hljs.initHighlightingOnLoad();</script>
 
         <link rel="shortcut icon" href="{{#if @blog.logo}}{{@blog.logo}}{{else}}{{asset "favicon.ico"}}{{/if}}">
 
         {{ghost_head}}
     </head>
     <body>
+
+        {{! Mathjax configuration}}
+        <script type="text/javascript"     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <script type="text/x-mathjax-config">  
+            MathJax.Hub.Config({  
+                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
+                          displayMath: [['$$','$$'], ['\[','\]']]}
+            });
+        </script> 
+
         <div id="wrap">
             {{> header}}
             
