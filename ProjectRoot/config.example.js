@@ -8,6 +8,16 @@ var path = require('path'),
 config = {
     // ### Production
     // When running Ghost in the wild, use the production environment
+    // Configure your URL and mail settings here// ### Production
+    // When running Ghost in the wild, use the production environment
+    // Configure your URL and mail settings here// ### Production
+    // When running Ghost in the wild, use the production environment
+    // Configure your URL and mail settings here// ### Production
+    // When running Ghost in the wild, use the production environment
+    // Configure your URL and mail settings here// ### Production
+    // When running Ghost in the wild, use the production environment
+    // Configure your URL and mail settings here// ### Production
+    // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
         url: 'http://my-ghost-blog.com',
@@ -48,7 +58,59 @@ config = {
         //      }
         //  },
         // ```
-
+         // Example mail config
+        // Visit http://support.ghost.org/mail for instructions
+        // ```
+        //  mail: {
+        //      transport: 'SMTP',
+        //      options: {
+        //          service: 'Mailgun',
+        //          auth: {
+        //              user: '', // mailgun username
+        //              pass: ''  // mailgun password
+        //          }
+        //      }
+        //  },
+        // ` // Example mail config
+        // Visit http://support.ghost.org/mail for instructions
+        // ```
+        //  mail: {
+        //      transport: 'SMTP',
+        //      options: {
+        //          service: 'Mailgun',
+        //          auth: {
+        //              user: '', // mailgun username
+        //              pass: ''  // mailgun password
+        //          }
+        //      }
+        //  },
+        // ` // Example mail config
+        // Visit http://support.ghost.org/mail for instructions
+        // ```
+        //  mail: {
+        //      transport: 'SMTP',
+        //      options: {
+        //          service: 'Mailgun',
+        //          auth: {
+        //              user: '', // mailgun username
+        //              pass: ''  // mailgun password
+        //          }
+        //      }
+        //  },
+        // ` // Example mail config
+        // Visit http://support.ghost.org/mail for instructions
+        // ```
+        //  mail: {
+        //      transport: 'SMTP',
+        //      options: {
+        //          service: 'Mailgun',
+        //          auth: {
+        //              user: '', // mailgun username
+        //              pass: ''  // mailgun password
+        //          }
+        //      }
+        //  },
+        // `
         database: {
             client: 'sqlite3',
             connection: {
@@ -70,6 +132,21 @@ config = {
     // **Developers only need to edit below here**
 
     // ### Testing
+    // Used when developing Ghost to run tests and check the health of Ghost
+    // Uses a different port number
+    // ### Testing
+    // Used when developing Ghost to run tests and check the health of Ghost
+    // Uses a different port number// ### Testing
+    // Used when developing Ghost to run tests and check the health of Ghost
+    // Uses a different port number// ### Testing
+    // Used when developing Ghost to run tests and check the health of Ghost
+    // Uses a different port number// ### Testing
+    // Used when developing Ghost to run tests and check the health of Ghost
+    // Uses a different port number// ### Testing
+    // Used when developing Ghost to run tests and check the health of Ghost
+    // Uses a different port number// ### Testing
+    // Used when developing Ghost to run tests and check the health of Ghost
+    // Uses a different port number// ### Testing
     // Used when developing Ghost to run tests and check the health of Ghost
     // Uses a different port number
     testing: {
