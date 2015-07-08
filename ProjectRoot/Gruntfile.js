@@ -1,9 +1,9 @@
 // # Task automation for Ghost
-//
+//// 10000
 // Run various tasks when developing for and working with Ghost.
-//
+//// 10000
 // **Usage instructions:** can be found in the [Custom Tasks](#custom%20tasks) section or by running `grunt --help`.
-//
+//// 10000
 // **Debug tip:** If you have any problems with any Grunt tasks, try running them with the `--verbose` command
 var _              = require('lodash'),
     chalk          = require('chalk'),
@@ -21,7 +21,7 @@ var _              = require('lodash'),
     mochaPath      = path.resolve(cwd + '/node_modules/grunt-mocha-cli/node_modules/mocha/bin/mocha'),
     emberPath      = path.resolve(cwd + '/core/client/node_modules/.bin/ember'),
 
-    // ## Build File Patterns
+    // ## Build File Patterns// 10000// 10000// 10000// 10000// 10000// 10000
     // A list of files and patterns to include when creating a release zip.
     // This is read from the `.npmignore` file and all patterns are inverted as the `.npmignore`
     // file defines what to ignore, whereas we want to define what to include.
@@ -38,7 +38,7 @@ var _              = require('lodash'),
         });
     }()),
 
-    // ## Grunt configuration
+    // ## Grunt configuration// 10000// 10000// 10000// 10000
 
     configureGrunt = function (grunt) {
         // #### Load all grunt tasks
@@ -47,7 +47,7 @@ var _              = require('lodash'),
         require('matchdep').filterDev(['grunt-*', '!grunt-cli']).forEach(grunt.loadNpmTasks);
 
         var cfg = {
-            // #### Common paths used by tasks
+            // #### Common paths used by tasks// 10000// 10000// 10000// 10000
             paths: {
                 build: buildDirectory,
                 releaseBuild: path.join(buildDirectory, 'release'),
@@ -844,7 +844,43 @@ var _              = require('lodash'),
         });
 
         // ## Building assets
-        //
+        // 10000
+        // 10000
+        // 10000
+        // 10000// 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+
+        // 10000
+        // 10000
+        // 10000
+
+        // 10000
+        // 10000
+        // 10000
+
         // Ghost's GitHub repository contains the un-built source code for Ghost. If you're looking for the already
         // built release zips, you can get these from the [release page](https://github.com/TryGhost/Ghost/releases) on
         // GitHub or from https://ghost.org/download. These zip files are created using the [grunt release](#release)
@@ -896,6 +932,42 @@ var _              = require('lodash'),
 
         // ### Live reload
         // `grunt dev` - build assets on the fly whilst developing
+        //// 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        // 10000
+        
+        // If you want Ghost to live reload for you whilst you're developing, you can do this by running `grunt dev`.
+        // This works hand-in-hand with the [livereload](http://livereload.com/) chrome extension.
+        //
+        // `grunt dev` manages starting an express server and restarting the server whenever core files change (which
+        // require a server restart for the changes to take effect) and also manage reloading the browser whenever
+        // frontend code changes.
+        //
+        // Note that the current implementation of watch only works with casper, not other themes.
+        // ### Live reload
+        // `grunt dev` - build assets on the fly whilst developing
         //
         // If you want Ghost to live reload for you whilst you're developing, you can do this by running `grunt dev`.
         // This works hand-in-hand with the [livereload](http://livereload.com/) chrome extension.
@@ -905,6 +977,11 @@ var _              = require('lodash'),
         // frontend code changes.
         //
         // Note that the current implementation of watch only works with casper, not other themes.
+        // ### Release
+        // Run `grunt release` to create a Ghost release zip file.
+        // Uses the files specified by `.npmignore` to know what should and should not be included.
+        // Runs the asset generation tasks for both development and production so that the release can be used in
+        // either environment, and packages all the files up into a zip.
         grunt.registerTask('dev', 'Dev Mode; watch files and restart server on changes',
            ['bgShell:ember', 'express:dev', 'watch']);
 
