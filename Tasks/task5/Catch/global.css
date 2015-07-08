@@ -1,0 +1,16 @@
+* {
+    font-family:Arial;
+}
+
+canvas {
+    margin: 0px;
+    padding:0px;
+    border-right:#333 dashed;
+    border-bottom:#333 dashed;
+    cursor: none;
+}
+
+body {
+    margin:0px;
+    background:#fc0;
+}
