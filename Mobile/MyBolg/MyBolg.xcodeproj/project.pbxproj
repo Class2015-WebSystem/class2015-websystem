@@ -17,6 +17,18 @@
 		189FD2551B4D8CE400015A2E /* MyBolgTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2541B4D8CE400015A2E /* MyBolgTests.m */; };
 		189FD2601B4D9C1600015A2E /* background@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189FD25F1B4D9C1600015A2E /* background@3x.jpg */; };
 		189FD2621B4DA30B00015A2E /* weibo.png in Resources */ = {isa = PBXBuildFile; fileRef = 189FD2611B4DA30B00015A2E /* weibo.png */; };
+		189FD2661B4DA8D500015A2E /* CoreDataUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2651B4DA8D500015A2E /* CoreDataUser.m */; };
+		189FD26A1B4DA93F00015A2E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2691B4DA93F00015A2E /* User.m */; };
+		189FD26D1B4DAF4B00015A2E /* LocalDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD26C1B4DAF4B00015A2E /* LocalDataBase.m */; };
+		189FD2711B4E0D9C00015A2E /* MainListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2701B4E0D9C00015A2E /* MainListVC.m */; };
+		189FD2741B4E0DE000015A2E /* Bolg.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2731B4E0DE000015A2E /* Bolg.m */; };
+		189FD2771B4E0E0A00015A2E /* CoreDataBolg.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2761B4E0E0A00015A2E /* CoreDataBolg.m */; };
+		189FD27B1B4E1A4900015A2E /* MainListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD27A1B4E1A4900015A2E /* MainListCell.m */; };
+		189FD2821B4E2B3B00015A2E /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2811B4E2B3B00015A2E /* SettingVC.m */; };
+		189FD2881B4E2DD900015A2E /* avatar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 189FD2871B4E2DD900015A2E /* avatar1.png */; };
+		189FD28C1B4E2EA700015A2E /* avatar3.png in Resources */ = {isa = PBXBuildFile; fileRef = 189FD28B1B4E2EA700015A2E /* avatar3.png */; };
+		189FD28E1B4E2ED600015A2E /* avatar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 189FD28D1B4E2ED600015A2E /* avatar2.png */; };
+		189FD2911B4E31B200015A2E /* AddBolgVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2901B4E31B200015A2E /* AddBolgVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +58,28 @@
 		189FD2541B4D8CE400015A2E /* MyBolgTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBolgTests.m; sourceTree = "<group>"; };
 		189FD25F1B4D9C1600015A2E /* background@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@3x.jpg"; sourceTree = "<group>"; };
 		189FD2611B4DA30B00015A2E /* weibo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weibo.png; sourceTree = "<group>"; };
+		189FD2641B4DA8D500015A2E /* CoreDataUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataUser.h; sourceTree = "<group>"; };
+		189FD2651B4DA8D500015A2E /* CoreDataUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataUser.m; sourceTree = "<group>"; };
+		189FD2681B4DA93F00015A2E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		189FD2691B4DA93F00015A2E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		189FD26B1B4DAF4B00015A2E /* LocalDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataBase.h; sourceTree = "<group>"; };
+		189FD26C1B4DAF4B00015A2E /* LocalDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDataBase.m; sourceTree = "<group>"; };
+		189FD26F1B4E0D9C00015A2E /* MainListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainListVC.h; sourceTree = "<group>"; };
+		189FD2701B4E0D9C00015A2E /* MainListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainListVC.m; sourceTree = "<group>"; };
+		189FD2721B4E0DE000015A2E /* Bolg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bolg.h; sourceTree = "<group>"; };
+		189FD2731B4E0DE000015A2E /* Bolg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bolg.m; sourceTree = "<group>"; };
+		189FD2751B4E0E0A00015A2E /* CoreDataBolg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataBolg.h; sourceTree = "<group>"; };
+		189FD2761B4E0E0A00015A2E /* CoreDataBolg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataBolg.m; sourceTree = "<group>"; };
+		189FD2781B4E18D000015A2E /* GlobalDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDefine.h; sourceTree = "<group>"; };
+		189FD2791B4E1A4900015A2E /* MainListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainListCell.h; sourceTree = "<group>"; };
+		189FD27A1B4E1A4900015A2E /* MainListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainListCell.m; sourceTree = "<group>"; };
+		189FD2801B4E2B3B00015A2E /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		189FD2811B4E2B3B00015A2E /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		189FD2871B4E2DD900015A2E /* avatar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar1.png; sourceTree = "<group>"; };
+		189FD28B1B4E2EA700015A2E /* avatar3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar3.png; sourceTree = "<group>"; };
+		189FD28D1B4E2ED600015A2E /* avatar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar2.png; sourceTree = "<group>"; };
+		189FD28F1B4E31B200015A2E /* AddBolgVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBolgVC.h; sourceTree = "<group>"; };
+		189FD2901B4E31B200015A2E /* AddBolgVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBolgVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +123,10 @@
 			children = (
 				189FD2391B4D8CE400015A2E /* AppDelegate.h */,
 				189FD23A1B4D8CE400015A2E /* AppDelegate.m */,
-				189FD23F1B4D8CE400015A2E /* ViewController.h */,
-				189FD2401B4D8CE400015A2E /* ViewController.m */,
-				189FD2421B4D8CE400015A2E /* Main.storyboard */,
+				189FD2781B4E18D000015A2E /* GlobalDefine.h */,
+				189FD26E1B4E0D5800015A2E /* UI */,
+				189FD2671B4DA8DD00015A2E /* Model */,
+				189FD2631B4DA89800015A2E /* CoreData */,
 				189FD2451B4D8CE400015A2E /* Images.xcassets */,
 				189FD2471B4D8CE400015A2E /* LaunchScreen.xib */,
 				189FD23C1B4D8CE400015A2E /* MyBolg.xcdatamodeld */,
@@ -130,10 +165,71 @@
 		189FD25E1B4D9BDA00015A2E /* Pic */ = {
 			isa = PBXGroup;
 			children = (
+				189FD2841B4E2D6D00015A2E /* Avatar */,
 				189FD25F1B4D9C1600015A2E /* background@3x.jpg */,
 				189FD2611B4DA30B00015A2E /* weibo.png */,
 			);
 			name = Pic;
+			sourceTree = "<group>";
+		};
+		189FD2631B4DA89800015A2E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				189FD26B1B4DAF4B00015A2E /* LocalDataBase.h */,
+				189FD26C1B4DAF4B00015A2E /* LocalDataBase.m */,
+				189FD2641B4DA8D500015A2E /* CoreDataUser.h */,
+				189FD2651B4DA8D500015A2E /* CoreDataUser.m */,
+				189FD2751B4E0E0A00015A2E /* CoreDataBolg.h */,
+				189FD2761B4E0E0A00015A2E /* CoreDataBolg.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		189FD2671B4DA8DD00015A2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189FD2681B4DA93F00015A2E /* User.h */,
+				189FD2691B4DA93F00015A2E /* User.m */,
+				189FD2721B4E0DE000015A2E /* Bolg.h */,
+				189FD2731B4E0DE000015A2E /* Bolg.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		189FD26E1B4E0D5800015A2E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				189FD23F1B4D8CE400015A2E /* ViewController.h */,
+				189FD2401B4D8CE400015A2E /* ViewController.m */,
+				189FD26F1B4E0D9C00015A2E /* MainListVC.h */,
+				189FD2701B4E0D9C00015A2E /* MainListVC.m */,
+				189FD2791B4E1A4900015A2E /* MainListCell.h */,
+				189FD27A1B4E1A4900015A2E /* MainListCell.m */,
+				189FD2831B4E2D4700015A2E /* Setting */,
+				189FD28F1B4E31B200015A2E /* AddBolgVC.h */,
+				189FD2901B4E31B200015A2E /* AddBolgVC.m */,
+				189FD2421B4D8CE400015A2E /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		189FD2831B4E2D4700015A2E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				189FD2801B4E2B3B00015A2E /* SettingVC.h */,
+				189FD2811B4E2B3B00015A2E /* SettingVC.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		189FD2841B4E2D6D00015A2E /* Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				189FD28B1B4E2EA700015A2E /* avatar3.png */,
+				189FD28D1B4E2ED600015A2E /* avatar2.png */,
+				189FD2871B4E2DD900015A2E /* avatar1.png */,
+			);
+			name = Avatar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,9 +312,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189FD28C1B4E2EA700015A2E /* avatar3.png in Resources */,
 				189FD2621B4DA30B00015A2E /* weibo.png in Resources */,
 				189FD2441B4D8CE400015A2E /* Main.storyboard in Resources */,
+				189FD2881B4E2DD900015A2E /* avatar1.png in Resources */,
 				189FD2491B4D8CE400015A2E /* LaunchScreen.xib in Resources */,
+				189FD28E1B4E2ED600015A2E /* avatar2.png in Resources */,
 				189FD2461B4D8CE400015A2E /* Images.xcassets in Resources */,
 				189FD2601B4D9C1600015A2E /* background@3x.jpg in Resources */,
 			);
@@ -239,8 +338,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				189FD23B1B4D8CE400015A2E /* AppDelegate.m in Sources */,
+				189FD2821B4E2B3B00015A2E /* SettingVC.m in Sources */,
+				189FD2711B4E0D9C00015A2E /* MainListVC.m in Sources */,
 				189FD23E1B4D8CE400015A2E /* MyBolg.xcdatamodeld in Sources */,
+				189FD26D1B4DAF4B00015A2E /* LocalDataBase.m in Sources */,
+				189FD2911B4E31B200015A2E /* AddBolgVC.m in Sources */,
+				189FD26A1B4DA93F00015A2E /* User.m in Sources */,
+				189FD2741B4E0DE000015A2E /* Bolg.m in Sources */,
 				189FD2411B4D8CE400015A2E /* ViewController.m in Sources */,
+				189FD27B1B4E1A4900015A2E /* MainListCell.m in Sources */,
+				189FD2661B4DA8D500015A2E /* CoreDataUser.m in Sources */,
+				189FD2771B4E0E0A00015A2E /* CoreDataBolg.m in Sources */,
 				189FD2381B4D8CE400015A2E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +544,7 @@
 				189FD25A1B4D8CE400015A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		189FD25B1B4D8CE400015A2E /* Build configuration list for PBXNativeTarget "MyBolgTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +553,7 @@
 				189FD25D1B4D8CE400015A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

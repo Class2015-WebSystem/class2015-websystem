@@ -117,23 +117,39 @@
             </objects>
             <point key="canvasLocation" x="381" y="353"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="WZV-qC-Ck2">
+        <!--SettingVC-->
+        <scene sceneID="MRf-ST-Yxf">
             <objects>
-                <viewController id="EPg-rV-4cp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uad-Sf-6b1" customClass="SettingVC" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zQe-fL-Fdu"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qk8-O5-2r6"/>
+                        <viewControllerLayoutGuide type="top" id="qoo-Yh-wmO"/>
+                        <viewControllerLayoutGuide type="bottom" id="nA5-Zm-Gvm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ecB-Ok-KP2">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="LXa-9t-2R9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFx-Ho-Cnn">
+                                <rect key="frame" x="0.0" y="92" width="320" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="       选择头像">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Y-0k-1bb">
+                                <rect key="frame" x="234" y="99" width="70" height="70"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6DP-fY-sLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MG9-yw-aCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026" y="337"/>
+            <point key="canvasLocation" x="762" y="422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fza-Lg-uP6">
@@ -153,6 +169,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="avatar1.png" width="636" height="617"/>
         <image name="background@3x.jpg" width="800" height="800"/>
         <image name="weibo.png" width="270" height="220"/>
     </resources>

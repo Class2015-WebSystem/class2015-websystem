@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A8C2A530-D5CD-424C-BCD4-2ADF1B220BCD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyBolg</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>616C82EDD72A86B285BEDA1224CA25357ED34BE4</key>
+		<string>github.com:emagrorriM/class2015-websystem.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Mobile/MyBolg/MyBolg.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>616C82EDD72A86B285BEDA1224CA25357ED34BE4</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:emagrorriM/class2015-websystem.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>616C82EDD72A86B285BEDA1224CA25357ED34BE4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>616C82EDD72A86B285BEDA1224CA25357ED34BE4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>class2015-websystem</string>
+		</dict>
+	</array>
+</dict>
+</plist>
