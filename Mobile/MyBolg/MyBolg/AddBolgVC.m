@@ -35,6 +35,7 @@
     bolg.username = user.username;
     bolg.createTime = [self currentTime];
     [LocalDataBase addNewBlog:bolg];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (NSString*)currentTime {

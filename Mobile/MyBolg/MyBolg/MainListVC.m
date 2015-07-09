@@ -10,9 +10,12 @@
 #import "GlobalDefine.h"
 #import "MainListCell.h"
 #import "LocalDataBase.h"
+#import "CoreDataUser.h"
 #import "SettingVC.h"
 #import "AddBolgVC.h"
 #import "Bolg.h"
+#import "User.h"
+#import "DetailVC.h"
 
 @interface MainListVC ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -110,7 +113,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    DetailVC *detailVC = [DetailVC new];
+    detailVC.blog = [_dataArray objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 #pragma mark- BtnAction
@@ -120,8 +125,16 @@
 }
 
 - (void)addNewBolg {
-    AddBolgVC *addBolgVC = [BOARD instantiateViewControllerWithIdentifier:@"AddBolgVC"];
-    [self.navigationController pushViewController:addBolgVC animated:YES];
+    User *user = [CoreDataUser getUser];
+    if ([user.username isEqualToString:@"000000"]) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"游客不能发博客" delegate:self cancelButtonTitle:@"知道了" otherButtonTitles:nil];
+        [alert show];
+    }else {
+        AddBolgVC *addBolgVC = [BOARD instantiateViewControllerWithIdentifier:@"AddBolgVC"];
+        [self.navigationController pushViewController:addBolgVC animated:YES];
+
+    }
+    
 }
 
 @end

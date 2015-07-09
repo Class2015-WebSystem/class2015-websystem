@@ -39,6 +39,7 @@
 		189FD2A41B4E415A00015A2E /* 817.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189FD29A1B4E415A00015A2E /* 817.jpg */; };
 		189FD2A51B4E415A00015A2E /* 818.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189FD29B1B4E415A00015A2E /* 818.jpg */; };
 		189FD2A61B4E415A00015A2E /* 819.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189FD29C1B4E415A00015A2E /* 819.jpg */; };
+		189FD2A91B4E76AB00015A2E /* DetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 189FD2A81B4E76AB00015A2E /* DetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		189FD29A1B4E415A00015A2E /* 817.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 817.jpg; sourceTree = "<group>"; };
 		189FD29B1B4E415A00015A2E /* 818.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 818.jpg; sourceTree = "<group>"; };
 		189FD29C1B4E415A00015A2E /* 819.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 819.jpg; sourceTree = "<group>"; };
+		189FD2A71B4E76AB00015A2E /* DetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailVC.h; sourceTree = "<group>"; };
+		189FD2A81B4E76AB00015A2E /* DetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +232,8 @@
 				189FD2831B4E2D4700015A2E /* Setting */,
 				189FD28F1B4E31B200015A2E /* AddBolgVC.h */,
 				189FD2901B4E31B200015A2E /* AddBolgVC.m */,
+				189FD2A71B4E76AB00015A2E /* DetailVC.h */,
+				189FD2A81B4E76AB00015A2E /* DetailVC.m */,
 				189FD2421B4D8CE400015A2E /* Main.storyboard */,
 			);
 			name = UI;
@@ -388,6 +393,7 @@
 				189FD23B1B4D8CE400015A2E /* AppDelegate.m in Sources */,
 				189FD2821B4E2B3B00015A2E /* SettingVC.m in Sources */,
 				189FD2711B4E0D9C00015A2E /* MainListVC.m in Sources */,
+				189FD2A91B4E76AB00015A2E /* DetailVC.m in Sources */,
 				189FD23E1B4D8CE400015A2E /* MyBolg.xcdatamodeld in Sources */,
 				189FD26D1B4DAF4B00015A2E /* LocalDataBase.m in Sources */,
 				189FD2911B4E31B200015A2E /* AddBolgVC.m in Sources */,
