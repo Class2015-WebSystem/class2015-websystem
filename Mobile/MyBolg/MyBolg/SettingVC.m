@@ -8,11 +8,21 @@
 
 #import "SettingVC.h"
 #import "AddBolgVC.h"
+#import "CoreDataUser.h"
+#import "User.h"
+
+@interface SettingVC ()
+@property (strong, nonatomic) IBOutlet UIImageView *avatarImageView;
+
+@end
 
 @implementation SettingVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    User *user = [CoreDataUser getUser];
+    _avatarImageView.image = [UIImage imageNamed:user.avatar];
     self.title = @"设置";
+    
 }
 @end

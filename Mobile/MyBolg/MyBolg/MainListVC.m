@@ -11,6 +11,7 @@
 #import "MainListCell.h"
 #import "LocalDataBase.h"
 #import "SettingVC.h"
+#import "AddBolgVC.h"
 #import "Bolg.h"
 
 @interface MainListVC ()<UITableViewDataSource,UITableViewDelegate>
@@ -27,6 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.title = @"博客";
     [self setupUI];
 }
 
@@ -44,12 +47,12 @@
     [self setupTableView];
     
     UIButton *addBtn = [UIButton new];
-    [addBtn addTarget:self action:@selector(addNewBolg) forControlEvents:UIControlEventTouchUpInside]
+    [addBtn addTarget:self action:@selector(addNewBolg) forControlEvents:UIControlEventTouchUpInside];
     addBtn.frame = CGRectMake(mainScreenWidth -50 , mainScreenHeight -50 , 30, 30);
     [addBtn setTitle:@"+" forState:UIControlStateNormal];
     addBtn.titleLabel.font = [UIFont systemFontOfSize:30];
     addBtn.titleLabel.textColor = [UIColor whiteColor];
-    addBtn.backgroundColor = [UIColor redColor];
+    addBtn.backgroundColor = [UIColor colorWithRed:108 green:0 blue:96 alpha:1];
     addBtn.layer.cornerRadius = addBtn.bounds.size.height / 2;
     [addBtn.layer setBorderColor:[[UIColor whiteColor] CGColor]];
     addBtn.layer.masksToBounds = YES;
@@ -85,13 +88,13 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 131;
+    return 150;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MainListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainListCell"];
     if (!cell) {
-        cell = [MainListCell new];
+        cell = [[MainListCell alloc] init];
     }
     Bolg *bolg = [_dataArray objectAtIndex:indexPath.row];
     cell.title = bolg.title;
@@ -101,6 +104,8 @@
     cell.createTime = bolg.createTime;
     cell.comments = bolg.comments;
     cell.picture = bolg.picture;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    [cell setupUI];
     return cell;
 }
 
@@ -115,7 +120,8 @@
 }
 
 - (void)addNewBolg {
-    
+    AddBolgVC *addBolgVC = [BOARD instantiateViewControllerWithIdentifier:@"AddBolgVC"];
+    [self.navigationController pushViewController:addBolgVC animated:YES];
 }
 
 @end

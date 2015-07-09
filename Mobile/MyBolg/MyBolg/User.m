@@ -14,7 +14,7 @@
     if (self) {
         self.username = username;
         self.password = password;
-        self.avatar = @"";
+        self.avatar = [NSString stringWithFormat:@"avatar%d",arc4random() % 3];
         self.sign = @"";
     }
     return self;

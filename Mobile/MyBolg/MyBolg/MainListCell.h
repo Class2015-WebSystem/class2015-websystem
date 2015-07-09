@@ -19,4 +19,6 @@
 @property (strong, nonatomic) NSArray *comments;
 @property (strong, nonatomic) NSArray *picture;
 
+
+- (void)setupUI;
 @end

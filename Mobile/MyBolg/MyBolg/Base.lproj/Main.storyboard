@@ -61,11 +61,11 @@
                                         <rect key="frame" x="195" y="186" width="24" height="22"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.95686274509803915" green="0.7803921568627451" blue="0.37647058823529411" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.42348666959999998" green="0.0" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgN-DO-V9Y">
                                 <rect key="frame" x="16" y="366" width="71" height="42"/>
-                                <color key="backgroundColor" red="0.95686274510000002" green="0.78039215689999997" blue="0.37647058820000001" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.42348666959999998" green="0.0" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,7 +77,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZi-m4-ZTa">
                                 <rect key="frame" x="233" y="366" width="71" height="42"/>
-                                <color key="backgroundColor" red="0.95686274510000002" green="0.78039215689999997" blue="0.37647058820000001" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.42348666959999998" green="0.0" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Vistor">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,7 +89,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gb-2z-pvj">
                                 <rect key="frame" x="125" y="414" width="71" height="42"/>
-                                <color key="backgroundColor" red="0.95686274510000002" green="0.78039215689999997" blue="0.37647058820000001" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.42348666959999998" green="0.0" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -105,6 +105,7 @@
                     <navigationItem key="navigationItem" id="hOr-WM-lak"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="backGround" destination="9ng-b5-tKj" id="MWx-3U-Qvh"/>
                         <outlet property="emailTextField" destination="qZw-FK-dWh" id="PUM-ca-Y5X"/>
                         <outlet property="loginView" destination="6jg-mK-1tG" id="e3r-J6-qNb"/>
                         <outlet property="passwordTextFeild" destination="Swc-oV-FXd" id="M9q-gk-hjg"/>
@@ -125,10 +126,13 @@
                         <viewControllerLayoutGuide type="top" id="qoo-Yh-wmO"/>
                         <viewControllerLayoutGuide type="bottom" id="nA5-Zm-Gvm"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LXa-9t-2R9">
+                    <view key="view" contentMode="scaleToFill" id="LXa-9t-2R9" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background@3x.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="w8Q-Sy-jVj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFx-Ho-Cnn">
                                 <rect key="frame" x="0.0" y="92" width="320" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -146,10 +150,80 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="Q9Y-0k-1bb" id="Fft-DJ-sNU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG9-yw-aCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="762" y="422"/>
+        </scene>
+        <!--Add BolgVC-->
+        <scene sceneID="sFC-pj-RhW">
+            <objects>
+                <viewController storyboardIdentifier="AddBolgVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zx5-4y-Tho" customClass="AddBolgVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OI7-wa-3dP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xtp-8Y-9cl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J6X-zG-axR" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background@3x.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Ow-DP-AOP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D0Y-A9-v6G">
+                                <rect key="frame" x="16" y="106" width="288" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86A-ZP-0uA">
+                                <rect key="frame" x="0.0" y="77" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goK-LO-x9l">
+                                <rect key="frame" x="0.0" y="149" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hwn-Uq-Ru2">
+                                <rect key="frame" x="16" y="178" width="288" height="239"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TT-tf-BFR">
+                                <rect key="frame" x="125" y="461" width="71" height="30"/>
+                                <color key="backgroundColor" red="0.42348666959999998" green="0.0" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="添加">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addNewBolg:" destination="Zx5-4y-Tho" eventType="touchUpInside" id="njB-d8-ogl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <action selector="keyBoardDismiss:" destination="Zx5-4y-Tho" eventType="touchUpInside" id="FeS-vQ-3hl"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="addBtn" destination="9TT-tf-BFR" id="DEj-u2-Yz5"/>
+                        <outlet property="detailTextView" destination="Hwn-Uq-Ru2" id="dQj-5e-Lb1"/>
+                        <outlet property="titleTextField" destination="D0Y-A9-v6G" id="asX-oF-YPo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cye-Y1-FTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1162" y="422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fza-Lg-uP6">
@@ -158,6 +232,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dTN-55-vcI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.42348666958041958" green="0.0" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="gU2-tj-J2G"/>
@@ -169,7 +248,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="avatar1.png" width="636" height="617"/>
+        <image name="avatar1.png" width="1208" height="1200"/>
         <image name="background@3x.jpg" width="800" height="800"/>
         <image name="weibo.png" width="270" height="220"/>
     </resources>

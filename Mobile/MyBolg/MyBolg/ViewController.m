@@ -13,6 +13,7 @@
 #import "MainListVC.h"
 
 @interface ViewController ()<UIAlertViewDelegate>
+@property (strong, nonatomic) IBOutlet UIImageView *backGround;
 @property (strong, nonatomic) IBOutlet UIView *loginView;
 @property (strong, nonatomic) IBOutlet UITextField *emailTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextFeild;
@@ -28,6 +29,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(keyBoardDismiss)];
+    [_backGround addGestureRecognizer:tap];
+    _backGround.userInteractionEnabled = YES;
     [self setupUI];
 }
 
@@ -65,6 +69,8 @@
 - (IBAction)vistorModeBtnAction:(id)sender {
     //TODO vistorMode
     MainListVC *mainListVC = [MainListVC new];
+    User *user = [[User alloc] initWithUserName:@"000000" AndPassword:@"000000"];
+    [CoreDataUser addNewUser:user];
     [self.navigationController pushViewController:mainListVC animated:YES];
 }
 
@@ -73,6 +79,8 @@
     if ([LocalDataBase checkUserByUsername:_emailTextField.text AndPassword:_passwordTextFeild.text]) {
         [CoreDataUser addNewUser:[LocalDataBase checkUserByUsername:_emailTextField.text AndPassword:_passwordTextFeild.text]];
         //下级页面
+        MainListVC *mainListVC = [MainListVC new];
+        [self.navigationController pushViewController:mainListVC animated:YES];
     }else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"用户名或密码出错" delegate:self cancelButtonTitle:@"郑知道了" otherButtonTitles:nil];
         [alert show];
@@ -93,9 +101,16 @@
     if (buttonIndex == 1) {
         //下级页面
         MainListVC *mainListVC = [MainListVC new];
+        User *user = [[User alloc] initWithUserName:_emailTextField.text AndPassword:_passwordTextFeild.text];
+        [CoreDataUser addNewUser:user];
+        [LocalDataBase addNewUser:user];
         [self.navigationController pushViewController:mainListVC animated:YES];
     }
 }
 
+- (void)keyBoardDismiss {
+    [_emailTextField resignFirstResponder];
+    [_passwordTextFeild resignFirstResponder];
+}
 
 @end

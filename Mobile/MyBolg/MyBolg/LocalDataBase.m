@@ -9,15 +9,19 @@
 #import "LocalDataBase.h"
 #import "AppDelegate.h"
 #import "User.h"
-#import "Bolg.h";
+#import "Bolg.h"
 
 @implementation LocalDataBase
+
+
+//User
+#pragma mark- User
 
 + (void)addNewUser:(User *)user {
     AppDelegate *app = [UIApplication sharedApplication].delegate;
     NSManagedObjectContext *context = [app managedObjectContext];
     
-    NSManagedObject *newUser = [NSEntityDescription insertNewObjectForEntityForName:@"LocalDataBaseUser" inManagedObjectContext:context];
+    NSManagedObject *newUser = [NSEntityDescription insertNewObjectForEntityForName:@"LoaclDataBaseUser" inManagedObjectContext:context];
     [newUser setValue:user.username forKey:@"username"];
     [newUser setValue:user.password forKey:@"password"];
     [newUser setValue:user.sign forKey:@"sign"];
@@ -29,7 +33,7 @@
     User *user = [User new];
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"USER"];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"LoaclDataBaseUser"];
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"(%K = %@)",@"username",username];
     [request setPredicate:pred];
     NSError *error;
@@ -47,6 +51,8 @@
     return nil;
 }
 
+//Bolg
+#pragma mark- Bolg
 
 + (void)addNewBlog:(Bolg*)bolg{
     AppDelegate *app = [UIApplication sharedApplication].delegate;
